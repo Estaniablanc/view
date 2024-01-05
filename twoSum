@@ -1,0 +1,7 @@
+class solution {
+public int [] twoSum(int [] nums,target){
+Map<Integer,Integer> map new hashMap<>();
+
+for ( int i=0; i< nums.length; i++) {
+for (map.containsKey(target - nums[i])){
+return new int [] 
