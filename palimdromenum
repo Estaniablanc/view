@@ -1,0 +1,25 @@
+-lets validate the input parameter 
+    -if 'x' is negative,
+     -return negative
+-creat two variables 
+  -copy, equals to 'x'
+  -reverse, reverse form of 'x'
+-while 'copy' is greater than 0 
+   -retrive the rightmost digit
+   -digit = copy % 10
+   - * 'reverse' by 10 and then increament by 'digit'
+   -remove rightmost digit 
+      -copy = copy /10
+-return true if 'reverse' is equal to 'x' 
+    - else, return false
+
+    class solution //{
+    public boolean isPalimdrome(int x) //{
+    if (x<0) return false;
+    int reverse =0,copy =x;
+    while (copy>0)//{
+    int digit =copy % 10;
+    reverse = reverse *10 +digit;
+    copy /=10;
+    //}
+    return reverse ==copy; }}
